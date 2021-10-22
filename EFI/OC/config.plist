@@ -6,6 +6,8 @@
 	<string>Tiny Monster Pro</string>
 	<key>#Build Date</key>
 	<string>9-17-2021</string>
+	<key>#EFI Version</key>
+	<string>v1.1.0</string>
 	<key>#Maker by</key>
 	<string>黑果小兵</string>
 	<key>#OpenCore Version</key>
@@ -14,8 +16,6 @@
 	<string>黑果小兵的部落阁 https://blog.daliansky.net</string>
 	<key>#Repo</key>
 	<string>https://github.com/daliansky/TinyMonsterPro-Hackintosh</string>
-	<key>#Version</key>
-	<string>v1.1.0</string>
 	<key>ACPI</key>
 	<dict>
 		<key>Add</key>
@@ -841,7 +841,7 @@
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>iMac20,1</string>
+			<string>iMac20,2</string>
 			<key>SystemSerialNumber</key>
 			<string></string>
 			<key>SystemUUID</key>
