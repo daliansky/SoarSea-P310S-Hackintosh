@@ -14,11 +14,16 @@
 | 硬盘3/4  |                 可接SATA 2.5寸硬盘/SATA SSD                  |
 |   显卡   |       Intel UHD Graphics 630/可插独立显卡/独显独立供电       |
 |  显示器  |                 支持`3840x2160 4K@60Hz`双显                  |
-|   声卡   |                   Realtek ALC269 `alcid=7`                   |
+|   声卡   |                  Realtek ALC269 `alcid=33`                   |
 |   网卡   | m.2 NGFF插槽，已更换为[BCM94360Z3](https://blog.daliansky.net/uploads/WeChatandShop.png) / DW1820A |
 
 ## 更新日志
 
+- 10-25-2021
+  - Release `v1.2.0`
+  - OpenCore `v0.7.5`
+  - 修复声卡问题
+  - 支持`Monterey`安装使用
 - 9-17-2021
   - Release `v1.1.0`
   - OpenCore `v0.7.3`
