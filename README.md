@@ -7,7 +7,7 @@
 |   规格   |                           详细信息                           |
 | :------: | :----------------------------------------------------------: |
 | 电脑型号 |                       TinyMonster Pro                        |
-| 操作系统 |                        macOS Big Sur                         |
+| 操作系统 |           macOS `Ventura` / `Monterey` / `Big Sur`           |
 |  处理器  |                 英特尔 酷睿 i9-10850K 10C20T                 |
 |   内存   |                        64 GB 2933MHz                         |
 | 硬盘1/2  |     Nvme Only: `WD_BLACK SN750 2TB`/Nvme+SATA双协议插槽      |
@@ -19,6 +19,15 @@
 
 ## 更新日志
 
+- 11-2-2022
+  - Release `v1.5.0`
+  - OpenCore `v0.8.5`
+  - 支持 `Ventura`
+  
+- 9-26-2022
+  - Release `v1.3.0`
+  - OpenCore `v0.8.4`
+  - 适配 `Dock` 新机型
 - 10-25-2021
   - Release `v1.2.0`
   - OpenCore `v0.7.5`

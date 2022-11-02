@@ -5,13 +5,13 @@
         <key>#Apply To</key>
         <string>Tiny Monster Pro</string>
         <key>#Build Date</key>
-        <string>8-12-2022</string>
+        <string>11-2-2022</string>
         <key>#EFI Version</key>
-        <string>v1.4.0</string>
+        <string>v1.5.0</string>
         <key>#Maker by</key>
         <string>黑果小兵</string>
         <key>#OpenCore Version</key>
-        <string>v0.8.3 Release</string>
+        <string>v0.8.5 Release</string>
         <key>#Posted on</key>
         <string>黑果小兵的部落阁 https://blog.daliansky.net</string>
         <key>#Repo</key>
@@ -266,7 +266,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.7.5</string>
+                    <string>V1.7.6</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -356,7 +356,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.4 | BT for Monterey</string>
+                    <string>V2.6.4 | BT for Monterey/Ventura</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -446,6 +446,24 @@
                     <key>BundlePath</key>
                     <string>USBPorts.kext</string>
                     <key>Comment</key>
+                    <string>V1.0 | USB for TinyMonster ProDOCK</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string></string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>USBPorts_Old.kext</string>
+                    <key>Comment</key>
                     <string>V1.0 | USB for TinyMonster Pro</string>
                     <key>Enabled</key>
                     <true/>
@@ -494,6 +512,60 @@
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>AirportItlwm_for_BigSur.kext</string>
+                    <key>Comment</key>
+                    <string>V2.2.0</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AirportItlwm</string>
+                    <key>MaxKernel</key>
+                    <string>20.99.99</string>
+                    <key>MinKernel</key>
+                    <string>20.00.00</string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>AirportItlwm_for_Monterey.kext</string>
+                    <key>Comment</key>
+                    <string>V2.2.0</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AirportItlwm</string>
+                    <key>MaxKernel</key>
+                    <string>21.99.99</string>
+                    <key>MinKernel</key>
+                    <string>21.00.00</string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>AirportItlwm_for_Ventura.kext</string>
+                    <key>Comment</key>
+                    <string>V2.2.0</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AirportItlwm</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string>22.00.00</string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
             </array>
             <key>Block</key>
             <array/>
@@ -527,7 +599,7 @@
                 <key>CustomPciSerialDevice</key>
                 <false/>
                 <key>CustomSMBIOSGuid</key>
-                <false/>
+                <true/>
                 <key>DisableIoMapper</key>
                 <true/>
                 <key>DisableLinkeditJettison</key>
@@ -652,7 +724,7 @@
                 <key>ScanPolicy</key>
                 <integer>0</integer>
                 <key>SecureBootModel</key>
-                <string>Default</string>
+                <string>j185f</string>
                 <key>Vault</key>
                 <string>Optional</string>
             </dict>
@@ -703,6 +775,8 @@
                     <true/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>CFGLock</string>
                     <key>Path</key>
@@ -716,13 +790,15 @@
                     <key>Arguments</key>
                     <string></string>
                     <key>Auxiliary</key>
-                    <true/>
+                    <false/>
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
                     <true/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>MmapDump</string>
                     <key>Path</key>
@@ -743,6 +819,8 @@
                     <true/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>modGRUBShell</string>
                     <key>Path</key>
@@ -763,10 +841,34 @@
                     <true/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>UEFI Shell</string>
                     <key>Path</key>
                     <string>OpenShell.efi</string>
+                    <key>RealPath</key>
+                    <false/>
+                    <key>TextMode</key>
+                    <false/>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Auxiliary</key>
+                    <false/>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Flavour</key>
+                    <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
+                    <key>Name</key>
+                    <string>TpmInfo</string>
+                    <key>Path</key>
+                    <string>TpmInfo.efi</string>
                     <key>RealPath</key>
                     <false/>
                     <key>TextMode</key>
@@ -783,14 +885,38 @@
                     <true/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <true/>
                     <key>Name</key>
-                    <string>TpmInfo</string>
+                    <string>CleanNvram</string>
                     <key>Path</key>
-                    <string>TpmInfo.efi</string>
+                    <string>CleanNvram.efi</string>
                     <key>RealPath</key>
-                    <false/>
+                    <true/>
                     <key>TextMode</key>
-                    <false/>
+                    <true/>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Auxiliary</key>
+                    <true/>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Flavour</key>
+                    <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <true/>
+                    <key>Name</key>
+                    <string>ResetSystem</string>
+                    <key>Path</key>
+                    <string>ResetSystem.efi</string>
+                    <key>RealPath</key>
+                    <true/>
+                    <key>TextMode</key>
+                    <true/>
                 </dict>
             </array>
         </dict>
@@ -801,7 +927,11 @@
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
                     <key>boot-args</key>
-                    <string>alcid=33 -cdfon igfxonln=1 brcmfx-aspm brcmfx-country=#a -lilubetaall</string>
+                    <string>alcid=33 -cdfon igfxonln=1 brcmfx-aspm -lilubetaall</string>
+                    <key>csr-active-config</key>
+                    <data>AAAAAA==</data>
+                    <key>prev-lang:kbd</key>
+                    <string>en-US:0</string>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -824,7 +954,7 @@
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string>C022111004N0000AD</string>
+                <string>C02152101GU0000UE</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
@@ -838,9 +968,9 @@
                 <key>SystemProductName</key>
                 <string>iMac20,2</string>
                 <key>SystemSerialNumber</key>
-                <string>C02HF09M046M</string>
+                <string>C02GWFZ6046M</string>
                 <key>SystemUUID</key>
-                <string>10929B43-7BCB-4E56-B7E1-D28AF3E30A63</string>
+                <string>2B371273-8341-4816-927C-FF7382A63312</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -849,7 +979,7 @@
             <key>UpdateSMBIOS</key>
             <true/>
             <key>UpdateSMBIOSMode</key>
-            <string>Create</string>
+            <string>Custom</string>
             <key>UseRawUuidEncoding</key>
             <true/>
         </dict>
@@ -957,18 +1087,6 @@
                     <false/>
                     <key>Path</key>
                     <string>OpenRuntime.efi</string>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>LoadEarly</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>AudioDxe.efi</string>
                 </dict>
                 <dict>
                     <key>Arguments</key>
